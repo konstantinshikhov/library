@@ -71,11 +71,15 @@
                     <tr><td colspan="5">Библиотека пуста</td></tr>
                 @endforelse
                 </tbody>
+
             </table>
+            {{$books->links()}}
         </div>
         <br />
+
         <br />
     </div>
+
     @include('book.partials.modal', ['authors' => $authors])
 @endsection
 

@@ -24,9 +24,9 @@ class BookStoreRequest extends FormRequest
     public function rules()
     {
         return [
-     //       'name'=>"required|string",
-//            'description'=>"string|nullable",
-       //     'image'=>"mimes:jpg,png|size:2048",
+            'name'=>"required|string",
+            'description'=>"string|nullable",
+           // 'image'=>"mimes:jpg,png|size:2048",
             'authors'=>"required|array"
         ];
     }
